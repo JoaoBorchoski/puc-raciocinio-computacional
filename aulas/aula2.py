@@ -7,7 +7,6 @@
 # 2 - Espera o input do usuario e imprime quantos anos ele tem baseado no ano de nascimento e remove um caso ele nao tenha feito aniversario no ano
 # user_input1 = input("Insira seu ano de nascimento: ")
 # user_input2 = input("Já fez aniversario esse ano? ")
-
 # if user_input1.lower() == "n":
 #     print(2023 - int(user_input1))
 # else:
