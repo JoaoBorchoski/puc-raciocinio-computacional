@@ -1,0 +1,25 @@
+version: "3.3"
+
+services:
+    database:
+        image: postgres
+        container_name: database_projeto_disciplina
+        restart: always
+        ports:
+            - 5432:5432
+        environment:
+            - POSTGRES_USER=projeto_disciplina_user
+            - POSTGRES_PASSWORD=123456
+            - POSTGRES_DB=projeto_disciplina_db
+        volumes:
+            - pgdata:/data/postgres
+
+volumes:
+    pgdata:
+        driver: local
+    pgdata_demo:
+        driver: local
+
+networks:
+    default:
+        driver: bridge
